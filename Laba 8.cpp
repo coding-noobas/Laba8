@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <algorithm>
 
@@ -49,9 +49,11 @@ std::string solve(std::string sep, std::string str) {
 
 int main()
 {
+    setlocale(LC_ALL, "");
     std::string sep, str;
-
+    std::cout << "Введите строку с разделителями: ";
     getline(std::cin, sep);
+    std::cout << "Введите строку со словами: ";
     getline(std::cin, str);
 
     std::cout << solve(sep, str) << "\n";
